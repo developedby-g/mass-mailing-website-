@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="style.css">
+    <title>MailDistro/Main</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav id="nav-bar">
+            <div id="logo-container">
+                <a href="index.html"><span id="logo">MailDistro</span></a>
+                <div class="display" id="svgHeader">
+                    
+                    <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_rgeqCxvX3p.json"  background="transparent"  speed="1"  style="width: 120px; height: 120px;"  loop  autoplay></lottie-player>
+                </div>
+             </div> 
+    </header>
+    <main id="main-page">
+         <section>
+            <h2 id="main-hero-heading">Unleash the power of<br>
+                instant communication and<br>
+                connect with your audience<br>
+                like never before.</h2>
+            <p id="main-sub-heading">
+                Upload your emails in .CSV <br>
+                file format and let the MailDistro<br>
+                do its work.  
+            </p>
+            <div id="upload-btn-container"><input type="file" id="csvFileInput" accept=".csv" name="csvFileInput">
+            <label for="csvFileInput" class="custom-file-input">Upload CSV file</label>
+            <span id="file-name"></span>
+            </div>
+            
+         </section>
+        <section id="mail-section">
+            <form metho="post" action="" id="my-form">
+                 <label for="email">From</label>
+                 <input type="email" name="email" id="email" class="email" placeholder="Enter your email..." required>
+                 <span class="error display-error" id="warning" >Enter a valid email!</span>
+                 <label for="subject">Subject</label>
+                 <input type="text" id="subject" name="subject" placeholder="Subject">
+                 <label for="mail-content">Design</label>
+                 <textarea name="mail-content" id="mail-content" cols="30" rows="10" placeholder="Create your own content" required></textarea>
+                 <span id="empty" class="empty-error  hide">Content cannot be Empty!</span>
+            </form>
+            <input type="submit" id="send-mail" name="send-mail" value="Send">
+            <div class="on-send-svg" id="svg-container">
+            </div>
+           
+        </section>
+    </main>
+     <section id="invalid-email-display">
+        <div id="csvContainer"></div>
+     </section>
+     
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
+     
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js" integrity="sha512-jEnuDt6jfecCjthQAJ+ed0MTVA++5ZKmlUcmDGBv2vUI/REn6FuIdixLNnQT+vKusE2hhTk2is3cFvv5wA+Sgg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/validator/13.9.0/validator.js" integrity="sha512-rOMALLrxlgIcEeMdX0O7A+pysTPb/201n7g04dPGvgJFB+f0CKvL8qljuIU/lDfG8IBi3o5R921G2013ihGuWg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"></script>
+  <script src="https://unpkg.com/split-type"></script>
+  <script src="animation.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

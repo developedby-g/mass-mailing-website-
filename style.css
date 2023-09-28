@@ -1,0 +1,350 @@
+/*index html file styling*/
+*{
+    margin:0;
+    padding:0;
+}
+body{
+   background-color: #DFFBE7;
+    ;
+}
+header{ 
+     height:111px;
+     display: flex;
+     align-items: center;
+   }
+#nav-bar{
+     width:100%;
+     display:flex;
+     justify-content: space-between;
+}
+#logo{
+    margin-left:40px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:#0C6A28;
+    
+}
+#logo-container a{
+      text-decoration: none;
+}
+#svgHeader{
+   position:absolute;
+   top:0px;
+   left:180px;
+}
+#internet-icon{
+   height:40px;
+ width:40px;
+ position:absolute;
+ top:35px;
+ right:402px;
+ 
+}
+#login{
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+margin-right:40px;
+}
+#sign-up-btn{
+   margin-right:40px;
+width: 237px;
+height: 56px;
+background-color:#0C6A28 ;
+border-radius: 20px;
+box-sizing: border-box;
+outline: none;
+border:none;
+font-weight: 600;
+font-size: 30px;
+line-height: 36px;
+color:white;
+transition: box-shadow 0.3s ease;
+}
+#sign-up-btn:hover{
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+}
+#index-main-page{
+ margin-top:81px;
+}
+#hero-heading{
+    position: absolute;
+    top:180px;
+    left:40px;
+    font-size: 72px;
+    line-height: 87px;
+letter-spacing: 0.045em;
+
+font-family:'Roboto'
+}
+#growth{
+    color:#0C6A28;
+}
+#sub-heading{
+    font-weight: 400;
+font-size: 30px;
+line-height: 36px;
+letter-spacing: 0.03em;
+margin:350px 0px 0px 40px;
+font-family:'Inter'
+}
+#get-started{
+    width: 329px;
+height: 86px;
+background-color: #0C6A28;
+border-radius: 15px;
+box-sizing: border-box;
+outline: none;
+border:none;
+font-weight: 600;
+font-size: 40px;
+line-height: 48px;
+color:white;
+margin:48px 0px 0px 98px;
+transition: box-shadow 0.3s ease;
+}
+#get-sarted span{
+      position:absolute;
+}
+#get-started:hover{
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+}
+
+#main-left-svg{
+     position:absolute;
+     top:147px;
+     left:751px;
+}
+#main-left-svg:hover{
+      scale:1.1;
+      transition: scale 0.6s ease-in-out;
+}
+
+#main-left-svg:not(:hover) {
+    scale:1;
+    transition: scale 0.6s ease-in;
+  }
+/*Main html page stylilng*/
+#main-page{
+  display:flex;
+  align-items:center;
+  justify-content: space-between;
+   
+}
+#main-hero-heading{
+    margin:20px 0px 0px 40px;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 127.02%;
+    font-family:'Roboto';
+}
+#main-sub-heading{
+    margin-top:10px;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    font-family: 'Inter',sans-serif;
+    margin-left:40px;
+}
+#upload-btn-container{
+      margin:40px 0px 0px 80px;
+}
+
+.custom-file-input {
+    padding: 14px 54px;
+    background-color:#0C6A28;
+    color:white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin:10px 0px 0px 80px;
+    font-size:18px;
+    font-weight: 600;
+  }
+  
+  .custom-file-input:active {
+    background-color: #d0d0d0;
+  }
+  
+  .custom-file-input:focus {
+    outline: none;
+  }
+  
+  /* Hide the default file input */
+  input[type="file"] {
+    display: none;
+  }
+#file-name{
+     margin-left:10px;
+     font-family: 'Inter',sans-serif;
+     font-weight: 600;
+}
+#invalid-email-display{
+      margin:50px;
+}
+
+#mail-section{
+    width: 594px;
+    min-height: 700px;
+    background: linear-gradient(180deg, rgba(75, 169, 102, 0.28) 15.04%, rgba(119, 177, 136, 0) 100%);
+    margin-right:62px;
+    position: relative;
+   
+}
+
+#mail-section h2{
+    font-size: 30px;
+    line-height: 36px;
+    color:#0C6A28;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-left: 140px;
+}
+
+#my-form label{
+      display:block;
+      font-family: 'Inter',sans-serif;
+      font-size: 18px;
+      line-height: 24px;
+      font-weight: 600;
+      color:#0C6A28;
+      
+}
+#my-form input{
+     border-radius: 10px;
+     padding-left:10px;
+     padding-right:10px;
+     font-family: 'Inter' sans-serif;
+     font-size: 18px;
+}
+
+#my-form textarea{
+      resize: none;
+      padding:10px 0px 0px 10px;
+      font-family:'Inter' sans-serif;
+      border-radius: 10px 10px 0px 0px ;
+      box-sizing: border-box;
+      outline: none;
+      border: none;
+      box-shadow: inset 4px 4px 12px rgba(12, 106, 40, 0.69);
+}
+label[for="email"]{ 
+     margin:20px 0px 0px 40px;
+}
+label[for="subject"]{
+      margin:30px 0px 0px 40px;
+}
+label[for="mail-content"]{
+    margin:15px 0px 0px 40px;
+}
+#email{
+       height:45px;
+       width:500px;
+       margin:5px 0px 0px 30px;
+       box-sizing: border-box;
+      outline: none;
+      border: none;
+      box-shadow: inset 4px 4px 12px rgba(12, 106, 40, 0.69);
+      position: relative;     
+}
+#subject{
+    height:50px;
+    width:500px;
+    margin:5px 0px 0px 30px;
+    box-sizing: border-box;
+      outline: none;
+      border: none;
+      box-shadow: inset 4px 4px 12px rgba(12, 106, 40, 0.69);
+}
+#mail-content{
+    margin:5px 0px 0px 30px;
+    width:500px;
+    height:300px;
+    font-size:18px;
+    position: relative;
+    
+}
+#mail-content::placeholder{
+      font-family: 'Inter',sans-serif;
+      
+}
+#send-mail{
+    width: 164px;
+    height: 54px;
+    background-color: #0C6A28;
+    color: white;
+    box-sizing: border-box;
+    outline:none;
+    border:none;
+    margin:80px 0px 0px 215px;
+    font-weight: 600;
+font-size: 24px;
+line-height: 29px;
+border-radius: 5px;
+filter: drop-shadow(0px 4px 9px #000000);
+}
+.display-error{
+     display:block;
+     margin:5px 0px 0px 40px;
+     font-size:16px;
+     font-family: 'Roboto',sans-serif;
+     letter-spacing: 0.05em;
+     color:red;
+     position:absolute;
+  
+     right:60px;
+}
+.error{
+     display:none;
+}
+.empty-error{
+    display:block;
+    margin:5px 0px 0px 40px;
+    font-size:16px;
+    font-family: 'Roboto',sans-serif;
+    letter-spacing: 0.05em;
+    color:red;
+    position:absolute;
+    right:60px;
+}
+.hide{
+     display:none;
+}
+#csvContainer ul{
+list-style:none;
+}
+.error-border{
+    
+    border:solid 1px red;
+}
+#svg-container{
+     width:140px;
+     position: absolute;
+     top:560px;
+     left:270px;
+     z-index: -1;
+     
+}
+#csvContainer {
+    display: flex;
+    justify-content: space-around;
+    
+  }
+  .scroll{
+      max-height:400px;
+      overflow-y: auto;
+      width:100%;
+      margin-top:30px;
+      font-size:20px;
+      font-family: 'Inter',sans-serif;
+  }
+  .scroll li {
+     margin-top:5px;
+  }
+  
+.invalid-container{
+     width:40%;
+}
+.valid-container{
+     width: 40%;
+}
